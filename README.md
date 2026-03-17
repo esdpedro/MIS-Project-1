@@ -11,13 +11,12 @@
 </head>
 <body>
 
-  <!-- HEADER -->
   <header class="site-header text-center">
     <div class="header-bg-overlay"></div>
     <div class="container position-relative">
 
       <div class="photo-wrapper">
-        <img src="Senior_Photo.jpeg"
+        <img src="images/senior-photo.jpeg"
              alt="Pedro Morales"
              class="profile-pic rounded-circle"/>
       </div>
@@ -39,19 +38,18 @@
     </div>
   </header>
 
-  <!-- NAVIGATION -->
   <nav class="site-nav sticky-top">
     <div class="container d-flex justify-content-center gap-4 py-2">
       <a href="#hobbies">Hobbies</a>
       <a href="#hometown">Hometown</a>
       <a href="#highschool">High School</a>
       <a href="#sport">Sport</a>
+      <a href="#video">Video</a>
     </div>
   </nav>
 
   <main class="container my-5">
 
-    <!-- HOBBIES -->
     <section id="hobbies" class="bio-section row align-items-center g-5 mb-5">
       <div class="col-md-6">
         <div class="section-label">01</div>
@@ -85,7 +83,7 @@
         </ol>
       </div>
       <div class="col-md-6 text-center">
-        <img src="Travel_Photo.jpg"
+        <img src="images/travel-photo.jpg"
              alt="Traveling in New York"
              class="section-img img-fluid"/>
       </div>
@@ -93,7 +91,6 @@
 
     <div class="section-rule"></div>
 
-    <!-- HOMETOWN -->
     <section id="hometown" class="bio-section row align-items-center g-5 mb-5 flex-md-row-reverse">
       <div class="col-md-6">
         <div class="section-label">02</div>
@@ -106,7 +103,7 @@
         </p>
       </div>
       <div class="col-md-6 text-center">
-        <img src="Petaluma-California.jpg"
+        <img src="images/petaluma-california.jpg"
              alt="Petaluma, California"
              class="section-img img-fluid"/>
       </div>
@@ -114,7 +111,6 @@
 
     <div class="section-rule"></div>
 
-    <!-- HIGH SCHOOL -->
     <section id="highschool" class="bio-section row align-items-center g-5 mb-5">
       <div class="col-md-6">
         <div class="section-label">03</div>
@@ -127,7 +123,7 @@
         </p>
       </div>
       <div class="col-md-6 text-center">
-        <img src="Photo_with_Mr__Bonfigli.jpg"
+        <img src="images/photo-with-mr-bonfigli.jpg"
              alt="Saint Vincent de Paul College Prep"
              class="section-img img-fluid"/>
       </div>
@@ -135,7 +131,6 @@
 
     <div class="section-rule"></div>
 
-    <!-- SPORT -->
     <section id="sport" class="bio-section row align-items-center g-5 mb-5 flex-md-row-reverse">
       <div class="col-md-6">
         <div class="section-label">04</div>
@@ -150,7 +145,7 @@
         </p>
       </div>
       <div class="col-md-6 text-center">
-        <img src="Boxing.JPG"
+        <img src="images/boxing.jpg"
              alt="Pedro Morales boxing"
              class="section-img img-fluid"/>
       </div>
@@ -158,15 +153,14 @@
 
     <div class="section-rule"></div>
 
-    <!-- VIDEO -->
     <section id="video" class="bio-section mb-5">
       <div class="video-card">
         <div class="section-label">05</div>
         <h2 class="section-heading text-center mb-1">Featured Video</h2>
         <div class="ratio ratio-16x9 video-frame">
           <iframe
-            src="https://www.youtube.com/embed/S_ztIHpCBWE"
-            title="USA Boxing Highlights"
+            src="https://www.youtube.com/embed/UkC4LLeaZvA"
+            title="Wine Country"
             allowfullscreen>
           </iframe>
         </div>
@@ -175,12 +169,10 @@
 
   </main>
 
-  <!-- FOOTER -->
   <footer class="site-footer text-center py-4">
-    <p class="mb-0">© 2025 Pedro Morales &nbsp;|&nbsp; BMIS 235 Individual Project</p>
+    <p class="mb-0">© 2025 Pedro Morales &nbsp;&nbsp;|&nbsp;&nbsp; BMIS 235 Individual Project</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
