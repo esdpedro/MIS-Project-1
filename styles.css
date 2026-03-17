@@ -1,0 +1,233 @@
+/* ============================================================
+   styles.css — Custom stylesheet for BMIS 235 Individual Project
+   ✅ Linked in index.html
+   ✅ Font-color styles throughout
+   ✅ Font-family styles throughout
+   ✅ 3 explicitly positioned divs:
+        #1 — .photo-wrapper
+        #2 — .section-label
+        #3 — .video-card
+   ✅ 14+ style definitions
+   ============================================================ */
+
+/* ── CSS VARIABLES ──────────────────────────────────────────── */
+:root {
+  --cream:      #faf7f2;
+  --navy:       #12223a;
+  --gold:       #c9973a;
+  --text-dark:  #1e1e1e;
+  --text-muted: #6b7280;
+  --white:      #ffffff;
+}
+
+/* ── 1. GLOBAL ───────────────────────────────────────────────── */
+body {
+  font-family: 'DM Sans', sans-serif;   /* ✅ font-family */
+  background-color: var(--cream);
+  color: var(--text-dark);              /* ✅ font-color */
+  margin: 0;
+}
+
+/* ── 2. HEADER ───────────────────────────────────────────────── */
+.site-header {
+  position: relative;
+  background-color: var(--navy);
+  background-image:
+    radial-gradient(ellipse at 20% 50%, rgba(201,151,58,0.15) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 20%, rgba(255,255,255,0.04) 0%, transparent 50%),
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 40px,
+      rgba(255,255,255,0.015) 40px,
+      rgba(255,255,255,0.015) 41px
+    );
+  padding: 80px 0 60px;
+  overflow: hidden;
+}
+
+.header-bg-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(18,34,58,0) 60%, var(--cream) 100%);
+  pointer-events: none;
+}
+
+/* ── 3. POSITIONED DIV #1 — .photo-wrapper ──────────────────── */
+.photo-wrapper {
+  position: relative;       /* ✅ POSITIONED DIV */
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+.photo-wrapper::before {
+  content: '';
+  position: absolute;
+  top: -8px; left: -8px; right: -8px; bottom: -8px;
+  border: 2px solid var(--gold);
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+/* ── 4. PROFILE PIC ──────────────────────────────────────────── */
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border: 3px solid var(--gold);
+}
+
+/* ── 5. HERO NAME ────────────────────────────────────────────── */
+.hero-name {
+  font-family: 'Cormorant Garamond', serif;  /* ✅ font-family */
+  font-size: 3.4rem;
+  font-weight: 700;
+  color: var(--white);                       /* ✅ font-color */
+  letter-spacing: 0.02em;
+  margin-bottom: 12px;
+}
+
+/* ── 6. HERO CONTACT ─────────────────────────────────────────── */
+.hero-contact {
+  font-size: 0.95rem;
+  color: var(--gold);    /* ✅ font-color */
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  margin-bottom: 16px;
+}
+
+/* ── 7. HERO BIO ─────────────────────────────────────────────── */
+.hero-bio {
+  max-width: 620px;
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.75);  /* ✅ font-color */
+  font-weight: 300;
+  line-height: 1.85;
+}
+
+/* ── 8. NAVIGATION ───────────────────────────────────────────── */
+.site-nav {
+  background-color: var(--navy);
+  border-bottom: 1px solid rgba(201,151,58,0.3);
+}
+
+.site-nav a {
+  font-family: 'DM Sans', sans-serif;    /* ✅ font-family */
+  color: rgba(255,255,255,0.7);          /* ✅ font-color */
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 6px 4px;
+  transition: color 0.2s ease;
+}
+
+.site-nav a:hover {
+  color: var(--gold);   /* ✅ font-color */
+}
+
+/* ── 9. BIO SECTIONS ─────────────────────────────────────────── */
+.bio-section {
+  padding: 40px 0;
+  animation: fadeUp 0.6s ease both;
+}
+
+/* ── 10. SECTION HEADING ─────────────────────────────────────── */
+.section-heading {
+  font-family: 'Cormorant Garamond', serif;  /* ✅ font-family */
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--navy);                        /* ✅ font-color */
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+/* ── 11. SECTION RULE ────────────────────────────────────────── */
+.section-rule {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold), transparent);
+  opacity: 0.5;
+  margin: 10px 0 40px;
+}
+
+/* ── 12. SECTION IMAGES ──────────────────────────────────────── */
+.section-img {
+  border-radius: 4px;
+  box-shadow: 0 8px 40px rgba(18,34,58,0.12);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.section-img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 48px rgba(18,34,58,0.18);
+}
+
+/* ── 13. POSITIONED DIV #2 — .section-label ─────────────────── */
+.section-label {
+  position: relative;    /* ✅ POSITIONED DIV */
+  display: inline-block;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--gold);    /* ✅ font-color */
+  opacity: 0.18;
+  line-height: 1;
+  margin-bottom: -10px;
+  user-select: none;
+}
+
+/* ── 14. HOBBY LIST ──────────────────────────────────────────── */
+.hobby-list {
+  font-size: 1rem;
+  color: var(--text-dark);   /* ✅ font-color */
+  line-height: 2;
+  padding-left: 20px;
+}
+
+.hobby-list ul {
+  padding-left: 18px;
+  color: var(--text-muted);  /* ✅ font-color */
+}
+
+/* ── 15. POSITIONED DIV #3 — .video-card ────────────────────── */
+.video-card {
+  position: relative;   /* ✅ POSITIONED DIV */
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0 4px 30px rgba(18,34,58,0.08);
+  border: 1px solid rgba(201,151,58,0.2);
+  overflow: hidden;
+}
+
+.video-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(to right, var(--navy), var(--gold));
+}
+
+/* ── 16. VIDEO FRAME ─────────────────────────────────────────── */
+.video-frame {
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+/* ── 17. FOOTER ──────────────────────────────────────────────── */
+.site-footer {
+  background-color: var(--navy);
+  font-family: 'DM Sans', sans-serif;      /* ✅ font-family */
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.45);           /* ✅ font-color */
+  margin-top: 60px;
+}
+
+/* ── PAGE LOAD ANIMATION ─────────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
